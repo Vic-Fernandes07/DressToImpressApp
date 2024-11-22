@@ -1,0 +1,74 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DressToImpress.MainPage"
+             Title="Dashboard"
+             BackgroundColor="White">
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Cabeçalho -->
+        <Grid>
+            <Label Text="hello, loren!" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   VerticalOptions="Center" />
+            <ImageButton Source="settings_icon.png" 
+                         HorizontalOptions="End" 
+                         VerticalOptions="Center"
+                         HeightRequest="24" 
+                         WidthRequest="24" />
+        </Grid>
+
+        <!-- Botões de Ação -->
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="load items" BackgroundColor="#E0E0E0" />
+            <Button Text="create clothes" BackgroundColor="#E0E0E0" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="schedule clothes" BackgroundColor="#E0E0E0" />
+            <Button Text="see my statistics" BackgroundColor="#E0E0E0" />
+        </HorizontalStackLayout>
+
+        <!-- Barra de Pesquisa -->
+        <SearchBar Placeholder="Search" />
+
+        <!-- Grade de Imagens -->
+        <Grid ColumnDefinitions="*, *, *" RowDefinitions="*, *" Spacing="10">
+            <Frame BackgroundColor="#E0E0E0" CornerRadius="10">
+                <Image Source="image1.png" Aspect="AspectFill" />
+            </Frame>
+            <Frame BackgroundColor="#E0E0E0" CornerRadius="10" Grid.Column="1">
+                <Image Source="image2.png" Aspect="AspectFill" />
+            </Frame>
+            <Frame BackgroundColor="#E0E0E0" CornerRadius="10" Grid.Column="2">
+                <Image Source="image3.png" Aspect="AspectFill" />
+            </Frame>
+            <Frame BackgroundColor="#E0E0E0" CornerRadius="10" Grid.Row="1">
+                <Image Source="image4.png" Aspect="AspectFill" />
+            </Frame>
+            <Frame BackgroundColor="#E0E0E0" CornerRadius="10" Grid.Row="1" Grid.Column="1">
+                <Image Source="image5.png" Aspect="AspectFill" />
+            </Frame>
+            <Frame BackgroundColor="#E0E0E0" CornerRadius="10" Grid.Row="1" Grid.Column="2">
+                <Image Source="image6.png" Aspect="AspectFill" />
+            </Frame>
+        </Grid>
+
+        <!-- Rodapé -->
+        <Grid ColumnDefinitions="*, *, *" Padding="10">
+            <ImageButton Source="notification_icon.png" 
+                         HorizontalOptions="Center" 
+                         HeightRequest="32" 
+                         WidthRequest="32" />
+            <ImageButton Source="home_icon.png" 
+                         HorizontalOptions="Center" 
+                         HeightRequest="32" 
+                         WidthRequest="32" />
+            <ImageButton Source="world_icon.png" 
+                         HorizontalOptions="Center" 
+                         HeightRequest="32" 
+                         WidthRequest="32" />
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

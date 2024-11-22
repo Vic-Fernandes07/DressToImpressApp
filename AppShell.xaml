@@ -1,0 +1,8 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:DressToImpress"
+       x:Class="DressToImpress.AppShell">
+    <ShellContent Title="Register" ContentTemplate="{DataTemplate local:RegisterPage}" />
+    <ShellContent Title="Login" ContentTemplate="{DataTemplate local:LoginPage}" />
+    <ShellContent Title="Dashboard" ContentTemplate="{DataTemplate local:MainPage}" />
+</Shell>
